@@ -4,8 +4,29 @@ import styles from "../styles/Home.module.scss";
 import SkillCard from "../components/skill-card";
 import SkillCardContainer from "../components/skill-card-container";
 import WorkCard from "../components/work-card";
-
+import ContactSection from "../components/contact-section";
+import SocialButtons from "../components/social-buttons";
 export default function Home() {
+
+  const handleDownloadCV = () => {
+    fetch("/api/cv", {
+      method: "GET",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+        },
+        }).then(res=>{
+          console.log(res);
+          res.blob().then(blob=>{
+            console.log(blob);
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "muhittin-dari-cv.pdf";
+            a.click();
+          })
+        })
+  }
   return (
     <div className="bg-first text-fourth">
       <Head>
@@ -17,11 +38,11 @@ export default function Home() {
           href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
         ></link>
       </Head>
-
       <main className="">
         <section
-          className={`  h-screen justify-center ${styles.container} text-first`}
+          className={` relative h-screen justify-center ${styles.container} text-first `}
         >
+      <SocialButtons/>
           <div className="flex flex-col text-center space-y-4 bg-first bg-opacity-0 rounded-md md:p-10 md:bg-opacity-20">
             <div
               className={`${styles["bird-container"]} ${styles["bird-container--one"]}`}
@@ -57,11 +78,12 @@ export default function Home() {
             <h3 className="text-2xl">{"I'm a software engineer"}</h3>
             <h3 className="text-2xl font-bold">{"from Turkey"}</h3>
             <div className="flex mx-auto my-4 space-x-2">
-              <button className="bg-third  border-2 px-4 py-2 text-lg text-secondary rounded-md hover:bg-fourth text-first border-secondary">
+              <button className="bg-third  border-2 px-4 py-2 text-lg text-secondary rounded-md hover:bg-fourth text-first border-secondary"
+              onClick={handleDownloadCV}>
                 Download CV
               </button>
               <button className="bg-secondary border-2 px-4 py-2 text-lg text-fourth rounded-md hover:bg-fourth hover:text-first">
-                Contact Me
+                <a href="#contact">Contact Me</a>
               </button>
             </div>
           </div>
@@ -157,24 +179,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="flex flex-col text-center my-10">
-          <h5 className={styles.sectionTitle}>Contact Me</h5>
-          <div className="flex flex-col space-y-4 my-10 mx-4 sm:w-full bg-second p-8 rounded-md">
-          <div className="flex flex-col items-start space-y-2 justify-between">
-            <label htmlFor="name" className="text-xl">Name: </label>
-            <input className="bg-fourth rounded-md p-2 text-first w-full sm:w-64" type="text" name="name" id="name" placeholder="Enter Name"/>
-          </div>
-          <div className="flex flex-col items-start space-y-2 justify-between">
-            <label htmlFor="name" className="text-xl">Email: </label>
-            <input className="bg-fourth  rounded-md p-2 text-first w-full sm:w-64" type="text" name="name" id="name" placeholder="Enter Email"/>
-          </div>
-          <div className="flex flex-col items-start space-y-2 justify-between">
-            <label htmlFor="name" className="text-xl">Message: </label>
-            <textarea className="bg-fourth  rounded-md p-2 text-first w-full" type="text" name="name" id="name" rows={10} placeholder="Enter your message here..."/>
-          </div>
-          <button type="submit" className="px-4 py-2 bg-third text-first rounded-md hover:bg-fourth sm:w-64">Send</button>
-          </div>
-        </section>
+        <ContactSection/>
+        
         </section>
 
         
