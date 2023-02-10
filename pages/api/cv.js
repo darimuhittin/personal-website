@@ -1,8 +1,8 @@
 //downlaod the cv
 import fs from "fs";
 export default function handler(req, res) {
-    console.log("start");
-    const filePath = process.cwd()+"/public/files/cvv4.pdf";
+  console.log("start");
+  const filePath = process.cwd() + "/public/files/CV-V7-en.pdf";
   var file = fs.readFileSync(filePath);
   var stat = fs.statSync(filePath);
   res.setHeader("Content-Type", "application/pdf");

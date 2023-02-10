@@ -25,16 +25,14 @@ const handleSubmit = (formData) => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(formData),
-  }).then(
-    (res) => {
-        console.log(res);
-        if (res.status === 200) {
-            return "success";
-        } else {
-            return "error";
-        }
-        }
-  )
+  }).then((res) => {
+    console.log(res);
+    if (res.status === 200) {
+      return "success";
+    } else {
+      return "error";
+    }
+  });
 };
 const initialState = {
   name: "",
@@ -127,8 +125,8 @@ const ContactSection = () => {
                 e.preventDefault();
                 handleSubmit(formData);
                 dispatch({
-                    type: "SUBMIT",
-                  });
+                  type: "SUBMIT",
+                });
               }}
             >
               Send
