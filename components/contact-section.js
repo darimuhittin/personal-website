@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 import styles from "../styles/Home.module.scss";
+import emailjs from "@emailjs/browser";
+
 const formDataReducer = (state, action) => {
   switch (action.type) {
     case "INPUT_CHANGE":
@@ -17,23 +19,6 @@ const formDataReducer = (state, action) => {
   }
 };
 
-const handleSubmit = (formData) => {
-  fetch("/api/contact", {
-    method: "POST",
-    headers: {
-      Accept: "application/json, text/plain, */*",
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(formData),
-  }).then((res) => {
-    console.log(res);
-    if (res.status === 200) {
-      return "success";
-    } else {
-      return "error";
-    }
-  });
-};
 const initialState = {
   name: "",
   email: "",
@@ -42,6 +27,28 @@ const initialState = {
 };
 const ContactSection = () => {
   const [formData, dispatch] = React.useReducer(formDataReducer, initialState);
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    dispatch({ type: "SUBMIT" });
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICEID,
+        process.env.NEXT_PUBLIC_TEMPLATEID,
+        form.current,
+        process.env.NEXT_PUBLIC_PUBLICKEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <section id="contact" className="flex flex-col text-center my-10">
       <h5 className={styles.sectionTitle}>Contact Me</h5>
@@ -56,7 +63,7 @@ const ContactSection = () => {
             </p>
           </div>
         ) : (
-          <>
+          <form ref={form} onSubmit={sendEmail}>
             <div className="flex flex-col items-start space-y-2 justify-between">
               <label htmlFor="name" className="text-xl">
                 Name:{" "}
@@ -64,10 +71,10 @@ const ContactSection = () => {
               <input
                 className="bg-fourth rounded-md p-2 text-first w-full sm:w-64"
                 type="text"
-                name="name"
-                id="name"
+                name="user_name"
+                id="user_name"
                 placeholder="Enter Name"
-                value={formData.name}
+                value={formData.user_name}
                 onChange={(e) =>
                   dispatch({
                     type: "INPUT_CHANGE",
@@ -84,10 +91,10 @@ const ContactSection = () => {
               <input
                 className="bg-fourth  rounded-md p-2 text-first w-full sm:w-64"
                 type="email"
-                name="email"
-                id="email"
+                name="user_email"
+                id="user_email"
                 placeholder="Enter Email"
-                value={formData.email}
+                value={formData.user_email}
                 onChange={(e) =>
                   dispatch({
                     type: "INPUT_CHANGE",
@@ -120,18 +127,11 @@ const ContactSection = () => {
             </div>
             <button
               type="submit"
-              className="px-4 py-2 bg-third text-first rounded-md hover:bg-fourth sm:w-64"
-              onClick={(e) => {
-                e.preventDefault();
-                handleSubmit(formData);
-                dispatch({
-                  type: "SUBMIT",
-                });
-              }}
+              className="px-4 py-2 mt-4 bg-third text-first rounded-md hover:bg-fourth sm:w-64"
             >
-              Send
+              SEND
             </button>
-          </>
+          </form>
         )}
       </div>
     </section>
