@@ -89,8 +89,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="sm:mx-10 md:mx-20 lg:mx-40">
-          <section className="flex flex-col text-center my-10">
+        <section className="sm:px-10 md:px-20 lg:px-40 bgAngelica">
+          <section className="flex flex-col text-center py-10">
             <h5 className={styles.sectionTitle}>About Me</h5>
             <p>
               I am a highly skilled React developer with 2 years of professional

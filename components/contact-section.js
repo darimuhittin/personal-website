@@ -52,7 +52,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="flex flex-col text-center my-10">
       <h5 className={styles.sectionTitle}>Contact Me</h5>
-      <div className="flex flex-col space-y-4 my-10 mx-4 sm:w-full bg-second p-8 rounded-md">
+      <div className="flex flex-col space-y-4 my-10 mx-4 sm:w-full bg-second p-8 rounded-md bg-opacity-70">
         {formData.submitted ? (
           <div className="flex flex-col space-y-4">
             <h3 className="text-third text-2xl font-extrabold">
