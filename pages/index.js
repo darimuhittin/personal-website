@@ -74,7 +74,7 @@ export default function Home() {
                 height={200}
               />
             </div>
-            <h3 className="text-2xl">{"I'm a software engineer"}</h3>
+            <h3 className="text-2xl">{"I'm a computer engineer"}</h3>
             <h3 className="text-2xl font-bold">{"from Turkey"}</h3>
             <div className="flex mx-auto my-4 space-x-2">
               <button
