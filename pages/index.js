@@ -172,10 +172,10 @@ export default function Home() {
                 <SkillCard skill="javascript" percentage={90} />
                 <SkillCard skill="typescript" percentage={90} />
                 <SkillCard skill="python" percentage={50} />
-                <SkillCard skill="c" percentage={40} />
-                <SkillCard skill="c++" percentage={40} />
-                <SkillCard skill="c#" percentage={40} />
-                <SkillCard skill="php" percentage={40} />
+                {/* <SkillCard skill="c" percentage={40} /> */}
+                {/* <SkillCard skill="c++" percentage={40} /> */}
+                {/* <SkillCard skill="c#" percentage={40} /> */}
+                {/* <SkillCard skill="php" percentage={40} /> */}
               </SkillCardContainer>
 
               <SkillCardContainer title="Frontend Development">
@@ -184,7 +184,7 @@ export default function Home() {
                 <SkillCard skill="css3" percentage={80} />
                 <SkillCard skill="html" percentage={80} />
                 <SkillCard skill="redux" percentage={90} />
-                <SkillCard skill="qt" percentage={30} />
+                {/* <SkillCard skill="qt" percentage={30} /> */}
                 <SkillCard skill="bootstrap" percentage={85} />
                 <SkillCard skill="babel" percentage={60} />
                 <SkillCard skill="webpack" percentage={60} />
@@ -199,13 +199,13 @@ export default function Home() {
                 <SkillCard skill="react-native" percentage={50} />
               </SkillCardContainer>
 
-              <SkillCardContainer title="AI / Machine Learning">
+              {/* <SkillCardContainer title="AI / Machine Learning">
                 <SkillCard skill="tensorflow" percentage={40} />
                 <SkillCard skill="pytorch" percentage={30} />
                 <SkillCard skill="pandas" percentage={30} />
                 <SkillCard skill="opencv" percentage={30} />
                 <SkillCard skill="scikit-learn" percentage={30} />
-              </SkillCardContainer>
+              </SkillCardContainer> */}
 
               <SkillCardContainer title="Database">
                 <SkillCard skill="sqlite" percentage={70} />
@@ -216,18 +216,18 @@ export default function Home() {
               </SkillCardContainer>
 
               <SkillCardContainer title="Software">
-                <SkillCard skill="postman" percentage={80} />
-                <SkillCard skill="figma" percentage={40} />
-                <SkillCard skill="matlab" percentage={40} />
+                <SkillCard skill="postman" percentage={90} />
+                <SkillCard skill="figma" percentage={90} />
+                {/* <SkillCard skill="matlab" percentage={40} /> */}
               </SkillCardContainer>
 
               <SkillCardContainer title="Static Site Generators">
-                <SkillCard skill="nextjs" percentage={80} />
+                <SkillCard skill="nextjs" percentage={90} />
               </SkillCardContainer>
-
+              {/* 
               <SkillCardContainer title="Game Engines">
                 <SkillCard skill="unity" percentage={30} />
-              </SkillCardContainer>
+              </SkillCardContainer> */}
 
               <SkillCardContainer title="Other">
                 <SkillCard skill="git" percentage={80} />
