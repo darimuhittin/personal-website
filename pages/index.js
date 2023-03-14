@@ -69,10 +69,11 @@ export default function Home() {
             <div>
               <Image
                 className="mx-auto rounded-full"
-                src="/pp.jpg"
+                src="/pp.png"
                 alt="Muhittin Darı"
                 width={200}
                 height={200}
+                objectFit="cover"
               />
             </div>
             <h3 className="text-2xl">{"I'm a computer engineer"}</h3>
