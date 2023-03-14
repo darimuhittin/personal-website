@@ -2,7 +2,7 @@
 import fs from "fs";
 export default function handler(req, res) {
   console.log("start");
-  const filePath = process.cwd() + "/public/files/CV-V7-en.pdf";
+  const filePath = process.cwd() + "/public/files/cv.pdf";
   var file = fs.readFileSync(filePath);
   var stat = fs.statSync(filePath);
   res.setHeader("Content-Type", "application/pdf");

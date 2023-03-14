@@ -6,6 +6,7 @@ import SkillCardContainer from "../components/skill-card-container";
 import WorkCard from "../components/work-card";
 import ContactSection from "../components/contact-section";
 import SocialButtons from "../components/social-buttons";
+import Link from "next/link";
 export default function Home() {
   const handleDownloadCV = () => {
     fetch("/api/cv", {
@@ -83,6 +84,7 @@ export default function Home() {
               >
                 Download CV
               </button>
+
               <button className="bg-secondary border-2 px-4 py-2 text-lg text-fourth rounded-md hover:bg-fourth hover:text-first">
                 <a href="#contact">Contact Me</a>
               </button>
