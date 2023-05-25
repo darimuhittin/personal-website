@@ -20,8 +20,8 @@ const formDataReducer = (state, action) => {
 };
 
 const initialState = {
-  name: "",
-  email: "",
+  user_name: "",
+  user_email: "",
   message: "",
   submitted: false,
 };
@@ -31,7 +31,8 @@ const ContactSection = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    dispatch({ type: "SUBMIT" });
+    // Check if empty
+    if (formData.user_name.tri) dispatch({ type: "SUBMIT" });
     emailjs
       .sendForm(
         process.env.NEXT_PUBLIC_SERVICEID,

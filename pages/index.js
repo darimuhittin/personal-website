@@ -114,34 +114,44 @@ export default function Home() {
           </section>
           <section className="flex flex-col text-center my-10">
             <h5 className={styles.sectionTitle}>Work History</h5>
-            <div className="grid grid-cols-1 md:grid-cols-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+              <WorkCard
+                title="Tekspiyasa"
+                icon="/images/tekspiyasa.png"
+                address="Istanbul"
+              >
+                I am working as a fullstack developer for our new project, which
+                will serve the textile industry. I am using NestJS on the
+                backend side and NextJS, TailwindCSS and Material UI on the
+                frontend side.
+              </WorkCard>
               <WorkCard
                 title="Simdatix"
                 icon="/images/simdatix.jpeg"
                 address="Ankara"
               >
-                We undertook the backoffice and web project of RoadJet with
-                React, NextJS and numerous libraries. We supported our work with
-                Atlassian tools (JIRA, Confluence, Bitbucket). We preferred
-                Agile Scrum for our working methodology. Whatever there is in
-                the original documentation about React, I have become familiar
-                with every subject here and I can use it easily.
+                We undertook the CMS and web site of RoadJet with React, NextJS
+                and numerous libraries. We supported our work with Atlassian
+                tools (JIRA, Confluence, Bitbucket). We preferred Agile Scrum
+                for our working methodology. Whatever there is in the original
+                documentation about React, I have become familiar with every
+                subject here and I can use it easily.
               </WorkCard>
               <WorkCard
                 title="Bilinova"
                 icon="/images/bilinova.png"
                 address="Yozgat Teknopark / Turkey"
               >
-                I worked with React and React Native on both the web and mobile
-                side of the project. I have been intertwined with Tailwind,
-                Routing Controllers and PrimeReact.
+                worked with React,NextJS and React Native on both the web and
+                mobile side of the project.
               </WorkCard>
               <WorkCard
                 title="Vizyon Design"
                 icon="/images/vizyon.png"
                 address="Yozgat Teknopark / Turkey"
               >
-                PHP & Laravel - Web application with a 3D payment system.
+                PHP & Laravel - web application with 3D payment system with
+                credit card.
               </WorkCard>
               <WorkCard
                 title="Jazari Dynamics"
@@ -163,7 +173,7 @@ export default function Home() {
                 icon="/images/bclogo.png"
                 address="Konya Teknokent / Turkey"
               >
-                I have conducted short -term research on drones.
+                I have conducted short-term research on drones.
               </WorkCard>
             </div>
           </section>
