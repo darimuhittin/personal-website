@@ -30,8 +30,15 @@ export default function Home() {
   return (
     <div className="bg-first text-fourth">
       <Head>
-        <title>Muhittin Darı</title>
-        <meta name="description" content="Muhittin Darı personal website." />
+        <title>
+          Muhittin Darı - Experienced React Developer for High-Quality Web
+          Applications
+        </title>
+        <meta
+          name="description"
+          content="Welcome to the website of Muhittin Darı, an experienced React developer specializing in building high-quality web applications. With expertise in the latest React frameworks and tools, Muhittin can help bring your ideas to life and create engaging user experiences. Explore his portfolio and services to learn how he can help take your web development projects to the next level."
+        />
+
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
@@ -93,26 +100,31 @@ export default function Home() {
           </div>
         </section>
         <section className="sm:px-10 md:px-20 lg:px-40 bgAngelica">
-          <section className="flex flex-col text-center py-10">
-            <h5 className={styles.sectionTitle}>About Me</h5>
-            <p>
-              I am a highly skilled React developer with 2 years of professional
-              experience. I completed my university education as a top student
-              in my faculty. I am proficient in Next.js and TypeScript and have
-              a deep understanding of Redux, custom hooks, hooks, Sass, Axios,
-              the Fetch API, and React design patterns. I am currently improving
-              my knowledge about the react-query library, NextJS13, React18,
-              Jest ,Vitest, Unit Tests, Integration Tests and E2E Tests and
-              I&apos;m always eager to learn new technologies and techniques. I
-              am comfortable working in Agile SCRUM environments and am a strong
-              collaborator in team settings. I am well-versed in best practices
-              and am always seeking out new opportunities to improve my skills
-              and grow as a developer. If you are looking for a dedicated and
-              motivated React developer, please don&apos;t hesitate to reach out
-              to me. I would be excited to discuss any potential opportunities.
-            </p>
-          </section>
           <section className="flex flex-col text-center my-10">
+            <section className="flex flex-col text-center py-10 px-2">
+              <h5 className={styles.sectionTitle}>About Me</h5>
+              <p>
+                I am a highly skilled React developer with 2 years of
+                professional experience. I completed my university education as
+                a top student in my faculty. I am proficient in Next.js and
+                TypeScript and have a deep understanding of Redux, custom hooks,
+                hooks, Sass, Axios, the Fetch API, and React design patterns. I
+                am currently improving my knowledge about React-Native and
+                Flutter and I&apos;m always eager to learn new technologies and
+                techniques.
+                <br />
+                <br />I am comfortable working in Agile SCRUM environments and
+                am a strong collaborator in team settings. I am well-versed in
+                best practices and am always seeking out new opportunities to
+                improve my skills and grow as a developer.
+                <br />
+                <br />
+                If you are looking for a dedicated and motivated React (in few
+                months this will include RN and Flutter too) developer, please
+                don&apos;t hesitate to reach out to me. I would be excited to
+                discuss any potential opportunities.
+              </p>
+            </section>
             <h5 className={styles.sectionTitle}>Work History</h5>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
               <WorkCard
