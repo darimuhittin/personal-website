@@ -31,8 +31,8 @@ export default function Home() {
     <div className="bg-first text-fourth">
       <Head>
         <title>
-          Muhittin Darı - Experienced React Developer for High-Quality Web
-          Applications
+          Muhittin Darı - Experienced React & React Native Developer for
+          High-Quality Web and Mobile Applications
         </title>
         <meta
           name="description"
@@ -83,7 +83,9 @@ export default function Home() {
                 objectFit="cover"
               />
             </div>
-            <h3 className="text-2xl">{"I'm a computer engineer"}</h3>
+            <h3 className="text-2xl">
+              {"I'm a React & React Native Developer"}
+            </h3>
             <h3 className="text-2xl font-bold">{"from Turkey"}</h3>
             <div className="flex mx-auto my-4 space-x-2">
               <button
@@ -104,57 +106,73 @@ export default function Home() {
             <section className="flex flex-col text-center py-10 px-2">
               <h5 className={styles.sectionTitle}>About Me</h5>
               <p>
-                I am a highly skilled React developer with 2 years of
-                professional experience. I completed my university education as
-                a top student in my faculty. I am proficient in Next.js and
-                TypeScript and have a deep understanding of Redux, custom hooks,
-                hooks, Sass, Axios, the Fetch API, and React design patterns. I
-                am currently improving my knowledge about React-Native and
-                Flutter and I&apos;m always eager to learn new technologies and
-                techniques.
+                Hello, my name is Muhittin and I&apos;m a React Native &amp;
+                React developer with a Bachelor&apos;s degree in Computer
+                Science. I&apos;ve graduated from Faculty of Engineering and
+                Architecture as a top student (1st degree). With over 3 years of
+                professional experience, I have expertise in React development,
+                including React Native, as well as server-side technologies such
+                as NestJS, Node.js, Express, and databases like SQL and NoSQL
+                databases such as MongoDB, MySQL and MSSQL. I&apos;ve also
+                worked with ORM tools like Sequelize and Mongoose to interact
+                with databases. In addition to this, I have experience working
+                with AWS services including S3, Cognito, API Gateway, Lambda,
+                and Amplify. Additionally, I have experience working with REST
+                APIs and consuming data from external services. <br />
                 <br />
-                <br />I am comfortable working in Agile SCRUM environments and
-                am a strong collaborator in team settings. I am well-versed in
-                best practices and am always seeking out new opportunities to
-                improve my skills and grow as a developer.
+                My skillset also includes Next.js, TypeScript, Redux, Redux
+                Toolkit, Axios, and Context API. In my previous roles, I have
+                leveraged these technologies to build scalable and performant
+                web and mobile applications. I have experience working with
+                front-end libraries such as Material UI, Bootstrap, and Tailwind
+                etc. .
                 <br />
                 <br />
-                If you are looking for a dedicated and motivated React (in few
-                months this will include RN and Flutter too) developer, please
-                don&apos;t hesitate to reach out to me. I would be excited to
-                discuss any potential opportunities.
+                I&apos;m always looking for new opportunities to apply my skills
+                and knowledge to real-world problems, and I&apos;m excited about
+                the possibility of working with a team of like-minded
+                individuals.
               </p>
             </section>
             <h5 className={styles.sectionTitle}>Work History</h5>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
               <WorkCard
+                title="HEY Teknoloji"
+                icon="/images/heyteknoloji.jpeg"
+                address="Kahramanmaraş / Remote"
+              >
+                I am working as a React Native Developer. I have developed a lot
+                of React Native apps these are live right now.
+              </WorkCard>
+              <WorkCard
                 title="Tekspiyasa"
                 icon="/images/tekspiyasa.png"
-                address="Istanbul"
+                address="Istanbul / Remote"
               >
-                I am working as a fullstack developer for our new project, which
-                will serve the textile industry. I am using NestJS on the
-                backend side and NextJS, TailwindCSS and Material UI on the
-                frontend side.
+                I’m working as a fullstack developer for our new project, which
+                will serve the textile industry. I’m using NestJS on the backend
+                side and NextJS, TailwindCSS and Material UI on the frontend
+                side.
               </WorkCard>
               <WorkCard
                 title="Simdatix"
                 icon="/images/simdatix.jpeg"
-                address="Ankara"
+                address="Ankara / Remote"
               >
-                We undertook the CMS and web site of RoadJet with React, NextJS
-                and numerous libraries. We supported our work with Atlassian
-                tools (JIRA, Confluence, Bitbucket). We preferred Agile Scrum
-                for our working methodology. Whatever there is in the original
-                documentation about React, I have become familiar with every
-                subject here and I can use it easily.
+                We undertook the CMS and web site of RoadJet (Brand of a tourism
+                company in Germany) with React, NextJS and numerous libraries.
+                We supported our work with Atlassian tools (JIRA, Confluence,
+                Bitbucket). We preferred Agile Scrum for our working
+                methodology. Whatever there is in the original documentation
+                about React, I have become familiar with every subject here and
+                I can use it easily.
               </WorkCard>
               <WorkCard
                 title="Bilinova"
                 icon="/images/bilinova.png"
                 address="Yozgat Teknopark / Turkey"
               >
-                worked with React,NextJS and React Native on both the web and
+                I worked with React,NextJS and React Native on both the web and
                 mobile side of the project.
               </WorkCard>
               <WorkCard
@@ -170,15 +188,15 @@ export default function Home() {
                 icon="/images/jazari.png"
                 address="Tubitak Marmara Research Center / Turkey"
               >
-                Using Qt Framework, I created an automation of a robot that will
-                serve under the roof of urban infrastructure imaging systems.
-                Communication with the robot was established via serial port,
-                video recordings and images were taken, manhole definitions and
-                related project files were created, panoramic images were
-                created from two 180+ degree camera images obtained as a result
-                of the analysis, and a report could be created for the faulty
-                parts of the channel by navigating the image after panoramic
-                image creation.
+                Using Qt Framework and C++, I created an automation of a robot
+                that will serve under the roof of urban infrastructure imaging
+                systems. Communication with the robot was established via serial
+                port, video recordings and images were taken, manhole
+                definitions and related project files were created, panoramic
+                images were created from two 180+ degree camera images obtained
+                as a result of the analysis, and a report could be created for
+                the faulty parts of the channel by navigating the image after
+                panoramic image creation.
               </WorkCard>
               <WorkCard
                 title="Bitcraft"
@@ -193,6 +211,9 @@ export default function Home() {
             <h5 className={styles.sectionTitle}>My Skills</h5>
 
             <div className="grid grid-cols-1  xl:grid-cols-2">
+              <SkillCardContainer title="Mobile App Development">
+                <SkillCard skill="react-native" percentage={95} />
+              </SkillCardContainer>
               <SkillCardContainer title="Programming Languages">
                 <SkillCard skill="javascript" percentage={90} />
                 <SkillCard skill="typescript" percentage={90} />
@@ -219,9 +240,6 @@ export default function Home() {
                 <SkillCard skill="node" percentage={70} />
                 <SkillCard skill="express" percentage={60} />
                 <SkillCard skill="nginx" percentage={30} />
-              </SkillCardContainer>
-              <SkillCardContainer title="Mobile App Development">
-                <SkillCard skill="react-native" percentage={50} />
               </SkillCardContainer>
 
               {/* <SkillCardContainer title="AI / Machine Learning">
@@ -255,7 +273,7 @@ export default function Home() {
               </SkillCardContainer> */}
 
               <SkillCardContainer title="Other">
-                <SkillCard skill="git" percentage={80} />
+                <SkillCard skill="git" percentage={95} />
                 <SkillCard skill="debian" percentage={70} />
                 <SkillCard skill="linux" percentage={60} />
               </SkillCardContainer>
@@ -264,6 +282,43 @@ export default function Home() {
 
           <ContactSection />
         </section>
+        <div
+          style={{
+            position: "fixed",
+            right: 10,
+            top: 10,
+            zIndex: 1000,
+            rotate: "-30deg",
+          }}
+        >
+          <div style={{ position: "relative" }}>
+            <Image src="/icons/heart.png" width={100} height={100} alt="Z.E." />
+
+            <span
+              style={{
+                position: "absolute",
+                top: "30%",
+                left: 14,
+                top: 14,
+                fontSize: "2rem",
+              }}
+            >
+              Z.
+            </span>
+
+            <span
+              style={{
+                position: "absolute",
+                top: "30%",
+                right: 14,
+                top: 14,
+                fontSize: "2rem",
+              }}
+            >
+              E.
+            </span>
+          </div>
+        </div>
       </main>
 
       <footer className={styles.footer}>

@@ -14,6 +14,10 @@ const formDataReducer = (state, action) => {
         ...state,
         submitted: true,
       };
+    case "RESET_SUBMIT":
+      return {
+        submitted: false,
+      };
     default:
       return state;
   }
@@ -30,9 +34,10 @@ const ContactSection = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
+    dispatch({ type: "SUBMIT" });
+
     e.preventDefault();
-    // Check if empty
-    if (formData.user_name.tri) dispatch({ type: "SUBMIT" });
+
     emailjs
       .sendForm(
         process.env.NEXT_PUBLIC_SERVICEID,
@@ -46,6 +51,7 @@ const ContactSection = () => {
         },
         (error) => {
           console.log(error.text);
+          dispatch({ type: "RESET_SUBMIT" });
         }
       );
   };
