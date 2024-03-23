@@ -282,43 +282,6 @@ export default function Home() {
 
           <ContactSection />
         </section>
-        <div
-          style={{
-            position: "fixed",
-            right: 10,
-            top: 10,
-            zIndex: 1000,
-            rotate: "-30deg",
-          }}
-        >
-          <div style={{ position: "relative" }}>
-            <Image src="/icons/heart.png" width={100} height={100} alt="Z.E." />
-
-            <span
-              style={{
-                position: "absolute",
-                top: "30%",
-                left: 14,
-                top: 14,
-                fontSize: "2rem",
-              }}
-            >
-              Z.
-            </span>
-
-            <span
-              style={{
-                position: "absolute",
-                top: "30%",
-                right: 14,
-                top: 14,
-                fontSize: "2rem",
-              }}
-            >
-              E.
-            </span>
-          </div>
-        </div>
       </main>
 
       <footer className={styles.footer}>
