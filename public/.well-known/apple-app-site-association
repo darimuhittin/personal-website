@@ -5,9 +5,23 @@
       {
         "appID": "4QZAHX25FP.com.kulturenvanter",
         "paths": [
-          "/deneme"
+          "/",
+          "/about-us/",
+          "/products/*",
+          "/services/detail/?id=*",
+          "/news/article/*",
+          "/promo/*",
+          "NOT /private/",
+          "NOT /settings/*",
+          "*.html"
         ]
       }
     ]
+  },
+  "webcredentials": {
+    "apps": ["4QZAHX25FP.com.kulturenvanter"]
+  },
+  "appclips": {
+    "apps": ["4QZAHX25FP.com.kulturenvanter"]
   }
 }
