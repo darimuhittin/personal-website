@@ -17,11 +17,11 @@ const App = () => {
         if (elapsedTime < timeout) {
           setTimeout(checkElapsedTime, checkInterval);
         } else {
-          router.push(fallbackUrl);
+          document.location = fallbackUrl;
         }
       }
 
-      router.push(urlScheme);
+      document.location = urlScheme;
       checkElapsedTime();
     }
 
