@@ -15,7 +15,8 @@
       a.setAttribute("href", app_uri);
       a.setAttribute("id", "app-link");
 
-      document.body.appendChild(a);
+      const body = document.querySelector("body");
+      body.appendChild(a);
 
       document.getElementById("app-link").click();
 
