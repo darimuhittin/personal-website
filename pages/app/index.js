@@ -1,7 +1,10 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
 import Script from "next/script";
+import { useRouter } from "next/router";
+
 const App = () => {
+  const router = useRouter();
   useEffect(() => {
     function openApp(urlScheme, fallbackUrl) {
       var startTime = Date.now();
@@ -14,11 +17,11 @@ const App = () => {
         if (elapsedTime < timeout) {
           setTimeout(checkElapsedTime, checkInterval);
         } else {
-          window.location.href = fallbackUrl;
+          router.push(fallbackUrl);
         }
       }
 
-      window.location.href = urlScheme;
+      router.push(urlScheme);
       checkElapsedTime();
     }
 
