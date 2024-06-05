@@ -12,9 +12,11 @@
 
       //create a hidden a tag and click it to open the app
       var a = document.createElement("a");
-      a.href = app_uri;
-      a.id = "app-link";
+      a.setAttribute("href", app_uri);
+      a.setAttribute("id", "app-link");
+
       document.body.appendChild(a);
+
       document.getElementById("app-link").click();
 
       setTimeout(function () {
