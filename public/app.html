@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>App Check</title>
+  </head>
+
+  <body>
     <script>
       // open the app uri if not installed redirect to playstore
       var app_uri = "kultur://entity/6343f544aa7b6649d";
@@ -16,6 +19,7 @@
       a.setAttribute("id", "app-link");
 
       const body = document.querySelector("body");
+      console.log("BODY : ", body);
       body.appendChild(a);
 
       document.getElementById("app-link").click();
@@ -34,7 +38,5 @@
 
       // openApp();
     </script>
-  </head>
-
-  <body></body>
+  </body>
 </html>
