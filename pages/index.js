@@ -38,6 +38,7 @@ export default function Home() {
           name="description"
           content="Welcome to the website of Muhittin Darı, an experienced React developer specializing in building high-quality web applications. With expertise in the latest React frameworks and tools, Muhittin can help bring your ideas to life and create engaging user experiences. Explore his portfolio and services to learn how he can help take your web development projects to the next level."
         />
+        <meta name="apple-itunes-app" content="app-id=1628356243, app-argument=kultur://">
 
         <link rel="icon" href="/favicon.ico" />
         <link
