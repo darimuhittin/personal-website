@@ -5,27 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>App Check</title>
     <script>
-      document
-        .getElementById("appLink")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
+      // open the app uri if not installed redirect to playstore
+      var app_uri = "kultur://entity/6343f544aa7b6649d";
+      var playstore_uri =
+        "https://play.google.com/store/apps/details?id=com.kulturenvanter";
 
-          var appLink = "kultur://entity/6343f544aa7b6649d";
-          var fallbackLink = "https://www.facebook.com";
-
-          var start = Date.now();
-          window.location = appLink;
-
-          setTimeout(function () {
-            if (Date.now() - start < 1500) {
-              window.location = fallbackLink;
-            }
-          }, 1000);
-        });
+      function openApp() {
+        window.location = app_uri;
+        setTimeout(function () {
+          window.location = playstore_uri;
+        }, 2000);
+      }
     </script>
   </head>
 
-  <body>
-    <a id="appLink" href="kultur://entity/6343f544aa7b6649d">Open in App</a>
-  </body>
+  <body></body>
 </html>
