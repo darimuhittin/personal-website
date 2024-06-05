@@ -1,8 +1,63 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
+import Script from "next/script";
 const App = () => {
   useEffect(() => {
-    window.location.href = "kultur://";
+    function openApp(urlScheme, fallbackUrl) {
+      var startTime = Date.now();
+      var timeout = 1500;
+      var checkInterval = 100;
+      var elapsedTime = 0;
+
+      function checkElapsedTime() {
+        elapsedTime = Date.now() - startTime;
+        if (elapsedTime < timeout) {
+          setTimeout(checkElapsedTime, checkInterval);
+        } else {
+          window.location.href = fallbackUrl;
+        }
+      }
+
+      window.location.href = urlScheme;
+      checkElapsedTime();
+    }
+
+    // Kullanıcının işletim sistemini tespit etme
+    function getMobileOperatingSystem() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      // iOS tespiti
+      if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return "iOS";
+      }
+      // Android tespiti
+      else if (/android/i.test(userAgent)) {
+        return "Android";
+      }
+      // Diğer
+      else {
+        return "unknown";
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      // Uygulama mağazası linkleri
+      var iosAppStoreLink =
+        "https://apps.apple.com/al/app/dijital-kültür-envanteri/id1628356243";
+      var androidPlayStoreLink = "https://facebook.com/";
+
+      var urlScheme = "kultur://";
+
+      var os = getMobileOperatingSystem();
+      if (os === "iOS") {
+        openApp(urlScheme, iosAppStoreLink); // App Store'a yönlendir
+      } else if (os === "Android") {
+        openApp(urlScheme, androidPlayStoreLink); // Play Store'a yönlendir
+      } else {
+        console.log("Desteklenmeyen işletim sistemi");
+      }
+      // Web ise id ile varlığa gidebilir.
+    });
   }, []);
   return (
     <div>
