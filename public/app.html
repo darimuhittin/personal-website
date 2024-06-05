@@ -7,27 +7,11 @@
   </head>
 
   <body>
+    <a href="kultur://entity/6343f544aa7b6649d">CLICK</a>
     <script>
       // open the app uri if not installed redirect to playstore
       var app_uri = "kultur://entity/6343f544aa7b6649d";
-      var playstore_uri =
-        "https://play.google.com/store/apps/details?id=com.kulturenvanter";
-
-      //create a hidden a tag and click it to open the app
-      var a = document.createElement("a");
-      a.setAttribute("href", app_uri);
-      a.setAttribute("id", "app-link");
-
-      const body = document.querySelector("body");
-      console.log("BODY : ", body);
-      body.appendChild(a);
-
-      document.getElementById("app-link").click();
-
-      setTimeout(function () {
-        window.location =
-          "https://play.google.com/store/apps/details?id=com.kulturenvanter";
-      }, 2000);
+      document.location = app_uri;
 
       // function openApp() {
       //   window.location = app_uri;
