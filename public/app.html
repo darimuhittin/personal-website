@@ -10,14 +10,23 @@
       var playstore_uri =
         "https://play.google.com/store/apps/details?id=com.kulturenvanter";
 
-      function openApp() {
-        window.location = app_uri;
-        setTimeout(function () {
-          window.location = playstore_uri;
-        }, 2000);
-      }
+      //create a hidden a tag and click it to open the app
+      var a = document.createElement("a");
+      a.href = app_uri;
+      a.click();
+      setTimeout(function () {
+        window.location =
+          "https://play.google.com/store/apps/details?id=com.kulturenvanter";
+      }, 2000);
 
-      openApp();
+      // function openApp() {
+      //   window.location = app_uri;
+      //   setTimeout(function () {
+      //     window.location = playstore_uri;
+      //   }, 2000);
+      // }
+
+      // openApp();
     </script>
   </head>
 
