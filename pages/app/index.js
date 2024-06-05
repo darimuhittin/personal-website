@@ -12,17 +12,17 @@ const App = () => {
       var checkInterval = 100;
       var elapsedTime = 0;
 
-      function checkElapsedTime() {
-        elapsedTime = Date.now() - startTime;
-        if (elapsedTime < timeout) {
-          setTimeout(checkElapsedTime, checkInterval);
-        } else {
-          document.location = fallbackUrl;
-        }
-      }
+      //   function checkElapsedTime() {
+      //     elapsedTime = Date.now() - startTime;
+      //     if (elapsedTime < timeout) {
+      //       setTimeout(checkElapsedTime, checkInterval);
+      //     } else {
+      //       document.location = fallbackUrl;
+      //     }
+      //   }
 
       document.location = urlScheme;
-      checkElapsedTime();
+      //   checkElapsedTime();
     }
 
     // Kullanıcının işletim sistemini tespit etme
