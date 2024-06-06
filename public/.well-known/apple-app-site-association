@@ -1,6 +1,8 @@
 {
   "applinks": {
-    "apps": ["4QZAHX25FP.com.kulturenvanter"],
+    "apps": [
+      "4QZAHX25FP.com.kulturenvanter"
+    ],
     "details": [
       {
         "appID": "4QZAHX25FP.com.kulturenvanter",
@@ -13,15 +15,20 @@
           "/promo/*",
           "NOT /private/",
           "NOT /settings/*",
-          "*.html"
+          "*.html",
+          "/app/*"
         ]
       }
     ]
   },
   "webcredentials": {
-    "apps": ["4QZAHX25FP.com.kulturenvanter"]
+    "apps": [
+      "4QZAHX25FP.com.kulturenvanter"
+    ]
   },
   "appclips": {
-    "apps": ["4QZAHX25FP.com.kulturenvanter"]
+    "apps": [
+      "4QZAHX25FP.com.kulturenvanter"
+    ]
   }
 }
