@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.kulturenvanter",
+      "sha256_cert_fingerprints": [
+        "1C:24:C1:60:22:DA:71:F1:F2:42:92:53:10:ED:B9:A0:EC:B8:B0:7B:3F:87:6E:D6:22:51:74:7F:A0:FF:D3:3F"
+      ]
+    }
+  }
+]
