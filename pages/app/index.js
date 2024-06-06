@@ -4,4 +4,4 @@ const AppRoute = () => {
   return <div>Deneme</div>;
 };
 
-export default index;
+export default AppRoute;
