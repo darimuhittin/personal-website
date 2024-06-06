@@ -14,7 +14,8 @@
           "NOT /private/",
           "NOT /settings/*",
           "*.html",
-          "/app/*"
+          "/app/*",
+          "/app"
         ]
       }
     ]
