@@ -5,17 +5,7 @@
       {
         "appID": "4QZAHX25FP.com.kulturenvanter",
         "paths": [
-          "/",
-          "/about-us/",
-          "/products/*",
-          "/services/detail/?id=*",
-          "/news/article/*",
-          "/promo/*",
-          "NOT /private/",
-          "NOT /settings/*",
-          "*.html",
-          "/app/*",
-          "/app"
+          "/varlik-detay?id=*"
         ]
       }
     ]
