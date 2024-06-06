@@ -5,7 +5,7 @@
       {
         "appID": "4QZAHX25FP.com.kulturenvanter",
         "paths": [
-          "/varlik-detay"
+          "/varlik-detay?id=*"
         ]
       }
     ]
