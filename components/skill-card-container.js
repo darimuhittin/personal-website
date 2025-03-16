@@ -1,14 +1,14 @@
+'use client';
+
 import React from "react";
 
-const SkillCardContainer = ({ children, title }) => {
+export default function SkillCardContainer({ title, children }) {
   return (
-    <div className="my-4 bg-second px-4 py-4 rounded-md mx-4 bg-opacity-70">
-      <h4 className="text-third text-2xl font-extrabold">{title}</h4>
-      <div className="grid grid-cols-2 sm:grid-cols-4 my-10 gap-y-10">
+    <div className="bg-gray-800 rounded-lg p-6 shadow-lg border border-gray-700">
+      <h3 className="text-xl font-bold text-white mb-6">{title}</h3>
+      <div className="space-y-4">
         {children}
       </div>
     </div>
   );
-};
-
-export default SkillCardContainer;
+}

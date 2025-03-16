@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+html,
+body {
+    @apply p-0 m-0 font-sans text-gray-100 bg-gray-900;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    min-height: 100vh;
+    width: 100%;
+}
+
+a {
+    @apply text-inherit no-underline transition-colors;
+}
+
+* {
+    @apply box-border;
+}
+
+/* Custom focus styles */
+*:focus-visible {
+    @apply outline-none ring-2 ring-purple-500 ring-offset-2 ring-offset-gray-900;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-gray-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-purple-600;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.bgAngelica {
+    @apply bg-fixed bg-center bg-cover bg-no-repeat relative;
+    background-image: url("/images/angelica.png");
+}
