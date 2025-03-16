@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import React from "react";
@@ -23,7 +23,7 @@ const WorkCard = ({
                 alt={title}
                 width={64}
                 height={64}
-                className="w-16 h-16 rounded-full object-cover"
+                className="object-contain bg-gray-800"
               />
             ) : (
               <svg
@@ -54,4 +54,3 @@ const WorkCard = ({
 };
 
 export default WorkCard;
-
