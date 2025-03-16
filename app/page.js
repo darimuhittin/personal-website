@@ -81,7 +81,7 @@ export default function Home() {
                             <h5 className="text-xl md:text-2xl font-light mb-2 text-purple-200">Hello, I&apos;m</h5>
                             <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">Muhittin Darı</h1>
                             <h3 className="text-xl md:text-3xl font-medium mb-2">
-                                Senior Frontend Developer
+                                Fullstack Developer
                             </h3>
                             <p className="text-lg text-indigo-200 mb-8">
                                 Specialized in React, React Native, and Next.js development
@@ -131,7 +131,7 @@ export default function Home() {
                         </div>
                         <div className="max-w-4xl mx-auto">
                             <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                                Hello, I&apos;m Muhittin, a Senior Frontend Developer with over 4 years of professional experience in web and mobile application development. I hold a Bachelor&apos;s degree in Computer Science from the Faculty of Engineering and Architecture, where I graduated as the top student.
+                                Hello, I&apos;m Muhittin, a Fullstack Developer with over 4 years of professional experience in web and mobile application development. I hold a Bachelor&apos;s degree in Computer Science from the Faculty of Engineering and Architecture, where I graduated as the top student.
                             </p>
                             <p className="text-lg text-gray-300 leading-relaxed mb-6">
                                 My expertise lies in React, React Native, and Next.js development, with a strong foundation in TypeScript and JavaScript. I have extensive experience building responsive, user-friendly interfaces and implementing complex frontend functionalities using modern frameworks and libraries.
@@ -357,7 +357,7 @@ export default function Home() {
                         <div className="flex flex-col md:flex-row justify-between items-center">
                             <div className="mb-6 md:mb-0">
                                 <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">Muhittin Darı</h2>
-                                <p className="text-gray-400 mt-2">Senior Frontend Developer</p>
+                                <p className="text-gray-400 mt-2">Fullstack Developer</p>
                             </div>
                             <div className="flex space-x-4">
                                 <SocialButtons className="text-gray-400" />
