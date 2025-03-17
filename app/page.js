@@ -10,17 +10,17 @@ import Navbar from "../components/navbar";
 import dynamic from "next/dynamic";
 import { useState, useEffect } from "react";
 import ProjectCard from "../components/ProjectCard";
-
+import HeroBackground3D from "../components/HeroBackground3D";
 // Import 3D components with dynamic loading to avoid SSR issues
-const HeroBackground3D = dynamic(
-  () => import("../components/HeroBackground3D"),
-  {
-    ssr: false,
-    loading: () => (
-      <div className="absolute inset-0 z-0 bg-gradient-to-r from-purple-900 to-indigo-800"></div>
-    ),
-  }
-);
+// const HeroBackground3D = dynamic(
+//   () => import("../components/HeroBackground3D.tsx"),
+//   {
+//     ssr: false,
+//     loading: () => (
+//       <div className="absolute inset-0 z-0 bg-gradient-to-r from-purple-900 to-indigo-800"></div>
+//     ),
+//   }
+// );
 
 export default function Home() {
   const [supports3D, setSupports3D] = useState(true);
