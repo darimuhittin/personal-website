@@ -5,6 +5,7 @@ import Image from "next/image";
 
 const otherIcons = {
   expo: "/skill-icons/expo.png",
+
   aws: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
   graphql:
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg",
@@ -12,6 +13,7 @@ const otherIcons = {
   node: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
   "react-native":
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+  zustand: "/skill-icons/zustand.svg",
 };
 
 const SkillCard = ({ skill, percentage }) => {

@@ -340,10 +340,11 @@ export default function Home() {
                 <SkillCard skill="nextjs" percentage={95} />
                 <SkillCard skill="typescript" percentage={90} />
                 <SkillCard skill="javascript" percentage={95} />
-                <SkillCard skill="tailwindcss" percentage={95} />
-                <SkillCard skill="redux" percentage={90} />
-                <SkillCard skill="css3" percentage={90} />
+                <SkillCard skill="css3" percentage={95} />
                 <SkillCard skill="html5" percentage={95} />
+                <SkillCard skill="tailwindcss" percentage={95} />
+                <SkillCard skill="zustand" percentage={95} />
+                <SkillCard skill="redux" percentage={90} />
               </SkillCardContainer>
 
               <SkillCardContainer title="Mobile Development">
@@ -353,20 +354,21 @@ export default function Home() {
               </SkillCardContainer>
 
               <SkillCardContainer title="Backend Development">
-                <SkillCard skill="node" percentage={80} />
-                <SkillCard skill="express" percentage={75} />
-                <SkillCard skill="nestjs" percentage={70} />
-                <SkillCard skill="mongodb" percentage={75} />
-                <SkillCard skill="mysql" percentage={70} />
-                <SkillCard skill="postgresql" percentage={65} />
+                <SkillCard skill="node" percentage={95} />
+                <SkillCard skill="express" percentage={90} />
+                <SkillCard skill="nestjs" percentage={90} />
+                <SkillCard skill="mongodb" percentage={90} />
+                <SkillCard skill="mysql" percentage={90} />
+                <SkillCard skill="postgresql" percentage={90} />
               </SkillCardContainer>
 
               <SkillCardContainer title="Tools & Others">
-                <SkillCard skill="git" percentage={90} />
-                <SkillCard skill="docker" percentage={60} />
-                <SkillCard skill="aws" percentage={65} />
-                <SkillCard skill="graphql" percentage={70} />
+                <SkillCard skill="git" percentage={95} />
+                <SkillCard skill="docker" percentage={95} />
+                <SkillCard skill="aws" percentage={80} />
+                <SkillCard skill="graphql" percentage={95} />
                 <SkillCard skill="jest" percentage={75} />
+                <SkillCard skill="kubernetes" percentage={30} />
               </SkillCardContainer>
             </div>
           </div>
