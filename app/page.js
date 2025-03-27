@@ -156,7 +156,7 @@ export default function Home() {
                 <span className="font-medium text-purple-400">
                   Fullstack Developer
                 </span>{" "}
-                with over 4 years of professional experience in{" "}
+                with over 5 years of professional experience in{" "}
                 <span className="font-medium text-purple-400">web</span> and{" "}
                 <span className="font-medium text-purple-400">
                   mobile application
@@ -246,66 +246,32 @@ export default function Home() {
               <div className="w-24 h-1 bg-purple-500 mx-auto"></div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+
               <WorkCard
-                title="Theatech"
-                icon="/images/theatech.jpeg"
-                address="Remote"
+                title="HEY Teknoloji"
+                icon="/images/heyteknoloji.jpeg"
+                address="Remote (4 years)"
               >
-                Fullstack Developer working with Node.js, GraphQL, React.js,
-                TypeScript, Express.js, MongoDB, NestJS, Tailwind CSS, Git,
-                Next.js, AWS, and Postman. Developed comprehensive web
+                Fullstack Developer working with Next.js, NestJS, TypeScript,
+                Tailwind CSS, Git, and AWS. Developed comprehensive web
                 applications and implemented complex frontend and backend
                 functionalities.
               </WorkCard>
               <WorkCard
-                title="HEY Teknoloji"
-                icon="/images/heyteknoloji.jpeg"
-                address="Remote"
-              >
-                React Native Developer responsible for building and maintaining
-                mobile applications. Utilized React Native, TypeScript,
-                JavaScript, and Git to create cross-platform mobile solutions.
-                Focused on developing user-friendly interfaces and implementing
-                mobile-specific features.
-              </WorkCard>
-              <WorkCard
                 title="Simdatix"
                 icon="/images/simdatix.jpeg"
-                address="Ankara, Turkey"
+                address="Remote (2 years)"
               >
-                React Developer specializing in Next.js development. Focused on
-                building server-side rendered and statically generated
-                applications. Leveraged React.js with TypeScript for robust
-                frontend development, while utilizing Node.js and Express.js for
-                backend services. Managed data persistence with MongoDB and
-                implemented CI/CD pipelines using Git. Collaborated through JIRA
-                for project management and utilized AWS for cloud
-                infrastructure. Created responsive UIs with SASS and tested APIs
-                using Postman to deliver efficient web applications.
+                Fullstack Developer working with React, Node.js, and MongoDB. Developed
+                web applications and implemented RESTful APIs. Contributed to the
+                development of various projects, focusing on both frontend and backend
+                technologies.
               </WorkCard>
-              <WorkCard
-                title="Bilinova Bilişim A.Ş."
-                icon="/images/bilinova.png"
-                address="Yozgat, Turkey"
-              >
-                Fullstack Developer creating web and mobile applications.
-                Utilized technologies such as Node.js, React.js, TypeScript,
-                JavaScript, Express.js, React Native, Tailwind CSS, Material-UI,
-                Next.js, and MongoDB to deliver comprehensive solutions.
-              </WorkCard>
-              <WorkCard
-                title="Vizyon Design"
-                icon="/images/vizyon.png"
-                address="Yozgat, Turkey"
-              >
-                Web Developer focusing on frontend development. Created
-                responsive and user-friendly web interfaces and implemented
-                various web functionalities.
-              </WorkCard>
+
               <WorkCard
                 title="Consintegra INC"
                 icon="/images/consintegra.jpeg"
-                address="Kocaeli, Turkey"
+                address="Kocaeli, Turkey (5 months)"
               >
                 Intern working with Qt Framework for GUI development. Gained
                 experience in creating desktop applications and implementing
@@ -314,7 +280,7 @@ export default function Home() {
               <WorkCard
                 title="Bitcraft"
                 icon="/images/bitcraft.jpeg"
-                address="Konya, Turkey"
+                address="Konya, Turkey (5 months)"
               >
                 Intern gaining practical experience in software development.
                 Conducted research and gained knowledge specifically on unmanned
